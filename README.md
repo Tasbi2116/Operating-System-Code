@@ -1,107 +1,91 @@
-# 🖥️ Operating-System-Code 🖥️
+# 🤖 Artificial-Intelligence
 
-Welcome to the **Operating-System-Code** repository! This project contains various **Operating System** concepts implemented in **C++** as part of the **CSE-2206** course. The course is worth **1.50 credits**, and this repository includes practical implementations of key OS algorithms and techniques like **process scheduling**, **memory management**, **deadlock handling**, and more!
+This repository contains the lab work for the course **"Artificial Intelligence Laboratory"** (Credit: 1.50), implemented in **Python**. Each lab assignment includes source code and corresponding test cases.
 
-## 🚀 Project Overview
+## 📂 Repository Structure
+The repository consists of the following directories:
 
-This repository covers the following OS concepts:
+### 1️⃣ Lab_1 AI - Vacuum Cleaner 🧹
+A simple vacuum cleaner agent that cleans dirt in a given environment. It follows a predefined set of actions to move left, right, and suck dirt while tracking its performance.
+- **📁 Directories:**
+  - `source/` - Contains the implementation files:
+    - `__init__.py`
+    - `calculate_performance.py`
+    - `main.py`
+    - `move_left.py`
+    - `move_right.py`
+    - `random_dirt.py`
+    - `suck_dirt.py`
+  - `tests/` - Contains test cases for the above source files:
+    - `test_calculate_performance.py`
+    - `test_move_left.py`
+    - `test_move_right.py`
+    - `test_random_dirt.py`
+    - `test_suck_dirt.py`
 
-- **Process Scheduling Algorithms**:
-  - First-Come, First-Served (FCFS)
-  - Non-Preemptive Shortest Job First (Non-prem-SJF)
-  - Non-Preemptive Priority Scheduling
-  - Round Robin Scheduling
-  - Shortest Job Next (SJFN)
+### 2️⃣ Lab_2 AI - Simple Agent 🎭
+Implements a basic AI agent that perceives its environment and takes actions accordingly. This agent follows simple rules to interact with its surroundings and make decisions.
+- **📁 Directories:**
+  - `source/` - Contains the implementation:
+    - `__init__.py`
+    - `actions.py`
+    - `agent.py`
+    - `boundary.py`
+    - `environment.py`
+    - `result.py`
+    - `simulation.py`
+  - `tests/` - Contains test cases for the source files.
 
-- **Memory Management**:
-  - Paging
-  - Page Replacement Algorithms
+### 3️⃣ Lab_3 AI - Model Based Agent 🏗️
+A model-based AI agent maintains an internal model of the environment to improve decision-making. This allows the agent to predict future states and optimize actions efficiently.
+- **📁 Directories:**
+  - `source/` - Contains implementation:
+    - `__init__.py`
+    - `actuators.py`
+    - `calculate_nearest_object.py`
+    - `environment.py`
+    - `gui_setup.py`
+    - `perceptions.py`
+    - `simulation.py`
+    - `target_movement.py`
+  - `tests/` - Contains test cases for all implemented modules.
 
-- **Deadlock**:
-  - Deadlock Detection
-  - Deadlock Handling
+### 4️⃣ Lab_4 AI - Learning Agent 📚
+An AI agent that learns from past experiences and optimizes its actions accordingly. It adapts based on collected data to improve its efficiency over time.
+- **📄 Files:**
+  - `main.py`
+  - `test_main.py`
 
-- **Segmentation**
+### 5️⃣ Reinforcement Agent 🎮
+This agent learns optimal actions through reinforcement learning techniques. It uses trial and error to maximize rewards and improve its performance over multiple interactions.
+- **📄 Files:**
+  - `__init__.py`
+  - `main.py`
+  - `test_simulation_logic.py`
 
-## 📂 File Descriptions
+## 🛠️ Setup and Installation
+To run the programs and test cases, follow these steps:
 
-Here’s a list of the C++ files and their functionality:
-
-### 1. **Deadlock.cpp**  
-   🛑 A basic implementation of **deadlock detection**, checking for deadlocks in a system by analyzing resource allocation.
-
-### 2. **Deadlock_Detection.cpp**  
-   🚨 A more detailed **deadlock detection** algorithm that uses matrix-based approaches to identify deadlocks in the system.
-
-### 3. **FCFS.cpp**  
-   ⏳ Implements **First-Come, First-Served (FCFS)** scheduling, where processes are executed in the order they arrive.
-
-### 4. **Non-prem-SJF.cpp**  
-   ⏱️ Implements **Non-Preemptive Shortest Job First (SJF)** scheduling, where the process with the shortest burst time is executed next.
-
-### 5. **Non-premPriority.cpp**  
-   ⚖️ Implements **Non-Preemptive Priority Scheduling**, where processes with higher priority are executed first.
-
-### 6. **Page_Replacement.cpp**  
-   🗃️ Implements **page replacement algorithms** like FIFO and LRU, to manage pages in memory.
-
-### 7. **Paging.cpp**  
-   💾 Implements **paging** for memory management, splitting memory into fixed-size pages for better management and allocation.
-
-### 8. **RoundRobin.cpp**  
-   🔄 Implements the **Round Robin (RR)** scheduling algorithm, where processes are executed in a cyclic manner with a fixed time quantum.
-
-### 9. **Segmentation.cpp**  
-   🧩 Implements **segmentation**, dividing memory into variable-sized segments, providing better memory allocation for programs.
-
-### 10. **SJFN.cpp**  
-   📉 Implements **Shortest Job Next (SJFN)** scheduling, where the process with the shortest burst time gets executed first.
-
-## 🛠️ How to Use
-
-To get started with any of the algorithms, follow these simple steps:
-
-1. **Clone the repository** to your local machine:
+1. 🚀 Clone the repository:
    ```bash
-   git clone https://github.com/Tasbi2116/Operating-System-Code.git
-
-
-2. Navigate to the directory for the desired algorithm and **compile** the corresponding `.cpp` file. For example, to run **FCFS.cpp**, use the following commands:
+   git clone https://github.com/Tasbi2116/Artificial-intelligence.git
+   cd Artificial-Intelligence
+   ```
+2. 📦 Install required dependencies:
    ```bash
-   cd FCFS
-   g++ FCFS.cpp -o FCFS
-   ./FCFS
+   pip install -r requirements.txt
+   ```
+3. ▶️ Run the lab programs:
+   ```bash
+   python Lab_1_AI/source/main.py
+   ```
+4. 🧪 Run the test cases:
+   ```bash
+   pytest
    ```
 
-3. **Repeat** the above steps for other algorithms (just replace the filenames accordingly).
-
-## 🔧 Prerequisites
-
-- **C++ Compiler** (preferably **g++**)
-- Basic knowledge of **Operating System** concepts and algorithms
-
-## 📝 Output
-
-Each file will display output based on the respective algorithm. For example:
-- **FCFS.cpp** will output the order in which processes are executed.
-- **Deadlock.cpp** and **Deadlock_Detection.cpp** will output whether a deadlock is detected or not.
-
-## 📄 Example Output
-
-#### 🔹 FCFS Scheduling Output:
-```
-Process Order: P1 → P2 → P3 → P4
-Waiting Time: P1 = 0, P2 = 4, P3 = 6, P4 = 10
-```
-
-#### 🔹 Deadlock Detection Output:
-```
-Deadlock Detected: Yes
-```
-
-## 🏆 Acknowledgments
-
-This project is part of the **CSE-2206: Operating Systems Lab** course, designed to provide hands-on experience with key OS concepts like scheduling, memory management, and deadlock handling.
+## 🤝 Contributions
+Feel free to fork the repository, submit pull requests, or report issues.
 
 ## 📧 Contact
 
@@ -110,9 +94,11 @@ Have any questions? Reach out via:
 - **GitHub Issues**: [Submit an issue](../../issues)
 - **Email**: [tasbi2116@cseku.ac.bd](tasbi2116@cseku.ac.bd)
 
-## 📝 License
+## 📜 License
+This project is licensed under the MIT License.
 
-This repository is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more information.
-```
+---
+### 👨‍🏫 Author
+Developed as part of the Artificial Intelligence Laboratory coursework under the guidance of **Dr. Amit Kumar Mondal, Associate Professor, CSE, Khulna University**.
 
-This `README.md` now includes fun emojis and colorfully highlights the functionality and usage of the project. Feel free to adjust any part based on your needs!
+---
